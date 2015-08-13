@@ -1,0 +1,11 @@
+Connected to c016wg.forpsi.com.
+220 C016WG - FORPSI Windows FTP ready...
+331 Password required for beskydskasedmickacz_transfer.
+230 User beskydskasedmickacz_transfer logged in.
+250 CWD command successful. "/log" is current directory.
+local: 333-150813-151729-vysledky.log remote: 333-150813-151729-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,14)
+150 Data connection accepted from 89.203.255.67:52802; transfer starting for /log/333-150813-151729-vysledky.log
+226 File received ok.
+4 bytes sent in 0.00 secs (27.9 kB/s)
+221 Goodbye.
