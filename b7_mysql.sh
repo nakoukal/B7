@@ -10,12 +10,12 @@
 # Script require - 3 parameter 1-rfid 2-time 3-number of control station
 # if is less then 3 parameter then do nothing
 #####################################################
-dbHostName=$(./get_setting.sh dbserver)
-dbPort=$(./get_setting.sh dbport)
-dbName=$(./get_setting.sh dbname)
-dbUserName=$(./get_setting.sh dbuser)
-dbPasswd=$(./get_setting.sh dbpassword)
-dbTableName=$(./get_setting.sh dbtablename)
+dbHostName=$(/home/pi/b7/get_setting.sh dbserver)
+dbPort=$(/home/pi/b7/get_setting.sh dbport)
+dbName=$(/home/pi/b7/get_setting.sh dbname)
+dbUserName=$(/home/pi/b7/get_setting.sh dbuser)
+dbPasswd=$(/home/pi/b7/get_setting.sh dbpassword)
+dbTableName=$(/home/pi/b7/get_setting.sh dbtablename)
 
 if [ "$#" -eq  3 ]; then
 	rfid=$1
