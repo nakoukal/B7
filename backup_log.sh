@@ -7,9 +7,9 @@
 # This UNIX shell script FTPs all the files in the input directory to a remote directory
 ###########################################################################################
 
-FILE=$(./get_setting.sh file)
-STNO=$(./get_setting.sh stanoviste)
-DSTDIR=$(./get_setting.sh dstdir)
+FILE=$(/home/pi/b7/get_setting.sh file)
+STNO=$(/home/pi/b7/get_setting.sh stanoviste)
+DSTDIR=$(/home/pi/b7/get_setting.sh dstdir)
 DATUM=$(date +%y%m%d-%H%M%S)
 
 SRCFILE=${FILE##*/} #cut file name from path
