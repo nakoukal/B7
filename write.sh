@@ -11,7 +11,7 @@
 # 1 - script name
 ###########################################################################################
 
-FILE=$(/home/pi/b7/get_setting.sh file)
+FILE=$(/bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < /home/pi/b7/setting.ini)
 SRCDIR=${FILE%/*} #cut path from pathwith filename
 LOGDIR="$SRCDIR/program_log"
 
