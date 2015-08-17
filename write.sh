@@ -11,25 +11,16 @@
 # 1 - script name
 ###########################################################################################
 
-FILE=$(/bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < /home/pi/b7/setting.ini)
-SRCDIR=${FILE%/*} #cut path from pathwith filename
-LOGDIR="$SRCDIR/program_log"
-
-if [ "$#" -ne 1 ]; then
-        echo "Illegal number of parameters"
-        exit;
-fi
-
-
 while :
 do
-        DATUM=$(date +%y%m%d-%H%M%S)
-        ps_out=`ps -ef | grep $1 | grep -v 'grep' | grep -v $0`
-        result=$(echo $ps_out | grep "$1")
-        if [[ "$result" == "" ]];then
-                echo "$DATUM $1 Not Running starting..." >> $LOGDIR/running.log
-                ./$1
-        fi
-        sleep 5
+       	DATUM=$(date +%y%m%d-%H%M%S)
+       	lsof_out=`lsof -f | grep /home/pi/b7/vysledky.log | awk '{ print $4 }'`
+        if [[ "$lsof_out" =~ ^.u|w|W|r$ ]];then
+                echo "$DATUM Do vysledky.log je zapisovano cekam " #>> $LOGDIR/running.log                
+		sleep 5
+        else 
+		echo "$DATUM Kopiruji soubor"
+		exit 1
+	fi
 done
 
