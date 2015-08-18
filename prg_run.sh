@@ -11,7 +11,7 @@
 # 1 - script name
 ###########################################################################################
 
-FILE=$(/home/pi/b7/get_setting.sh file)
+FILE=$(/bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < /home/pi/b7/setting.ini)
 SRCDIR=${FILE%/*} #cut path from pathwith filename
 LOGDIR="$SRCDIR/program_log"
 
@@ -28,7 +28,7 @@ do
         result=$(echo $ps_out | grep "$1")
         if [[ "$result" == "" ]];then
                 echo "$DATUM $1 Not Running starting..." >> $LOGDIR/running.log
-                ./$1
+                ./$1 >> $LOGDIR/b7_bin.log
         fi
         sleep 5
 done

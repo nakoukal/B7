@@ -23,7 +23,7 @@ BACKUPDIR="$SRCDIR/backup";
 #test if file log exist
 if [ ! -f $FILE ]
 then
-	echo "soubor $FILE neexistuje!" 
+	echo "soubor $FILE neexistuje!" >> /home/pi/b7/program_log/backup.log
 	exit 0 
 fi
 
@@ -40,5 +40,4 @@ mv $FILE "$BACKUPDIR/$FILEFTP" #move to backup folder
 cp "$BACKUPDIR/$FILEFTP" $TOSENDDIR #copu to ftpsend folder
 cp "$BACKUPDIR/$FILEFTP" "$FLASHDIR/$FILEFTP" #copy to flashdisk folder
 
-exit 0 
-
+exit 0

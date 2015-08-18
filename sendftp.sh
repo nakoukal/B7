@@ -8,7 +8,7 @@
 ###########################################################################################
 
 
-INIFILEPATH="setting.ini";
+INIFILEPATH="/home/pi/b7/setting.ini";
 
 #test if ini file exists
 if [ ! -f $INIFILEPATH ]
@@ -17,12 +17,12 @@ then
         exit
 fi
 
-SERV=$(./get_setting.sh ftpserver)
-LOGIN=$(./get_setting.sh ftpuser)
-PASSW=$(./get_setting.sh ftppassword)
-FILE=$(./get_setting.sh file)
-STNO=$(./get_setting.sh stanoviste)
-DSTDIR=$(./get_setting.sh dstdir)
+SERV=$(/home/pi/b7/get_setting.sh ftpserver)
+LOGIN=$(/home/pi/b7/get_setting.sh ftpuser)
+PASSW=$(/home/pi/b7/get_setting.sh ftppassword)
+FILE=$(/home/pi/b7/get_setting.sh file)
+STNO=$(/home/pi/b7/get_setting.sh stanoviste)
+DSTDIR=$(/home/pi/b7/get_setting.sh dstdir)
 DATUM=$(date +%y%m%d-%H%M%S)
 SRCFILE=${FILE##*/} #cut file name from path
 SRCDIR=${FILE%/*} #cut path from pathwith filename
@@ -38,6 +38,7 @@ then
         echo "$DATUM no internet conection to  $SERV host" >> $LOGDIR/ftp.log
         exit 0
 fi
+
 
 cd $TOSENDDIR
 

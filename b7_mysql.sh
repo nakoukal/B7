@@ -26,4 +26,3 @@ if [ "$#" -eq  3 ]; then
 	INSERT IGNORE INTO $dbTableName (RFID,CAS,KONTROLA) VALUES ('$rfid','$cas',$control);
 EOF
 fi
-

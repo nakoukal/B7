@@ -1,0 +1,8 @@
+Connected to c016wg.forpsi.com.
+220 C016WG - FORPSI Windows FTP ready...
+331 Password required for beskydskasedmickacz_transfer.
+230 User beskydskasedmickacz_transfer logged in.
+250 CWD command successful. "/log" is current directory.
+local: *.log: No such file or directory
+local: *.log remote: *.log
+221 Goodbye.
