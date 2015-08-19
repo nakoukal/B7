@@ -1,1 +1,0 @@
-zde budou zalohy logu

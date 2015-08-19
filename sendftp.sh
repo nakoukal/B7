@@ -20,12 +20,11 @@ fi
 SERV=$(/home/pi/b7/get_setting.sh ftpserver)
 LOGIN=$(/home/pi/b7/get_setting.sh ftpuser)
 PASSW=$(/home/pi/b7/get_setting.sh ftppassword)
-FILE=$(/home/pi/b7/get_setting.sh file)
+SRCDIR=$(/home/pi/b7/get_setting.sh file)
 STNO=$(/home/pi/b7/get_setting.sh stanoviste)
 DSTDIR=$(/home/pi/b7/get_setting.sh dstdir)
 DATUM=$(date +%y%m%d-%H%M%S)
-SRCFILE=${FILE##*/} #cut file name from path
-SRCDIR=${FILE%/*} #cut path from pathwith filename
+
 FLASHDIR="/media/KINGSTON";
 TOSENDDIR="$SRCDIR/tosend";
 BACKUPDIR="$SRCDIR/backup";
@@ -79,4 +78,3 @@ do
 done
 
 exit 0
-

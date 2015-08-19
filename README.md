@@ -1,2 +1,1 @@
-# b7
-shel for b7
+zde budou zalohy logu

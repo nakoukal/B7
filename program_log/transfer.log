@@ -3,6 +3,144 @@ Connected to c016wg.forpsi.com.
 331 Password required for beskydskasedmickacz_transfer.
 230 User beskydskasedmickacz_transfer logged in.
 250 CWD command successful. "/log" is current directory.
-local: *.log: No such file or directory
-local: *.log remote: *.log
+local: 301-150818-180102-vysledky.log remote: 301-150818-180102-vysledky.log
+227 Entering Passive Mode (81,2,194,16,195,159)
+150 Data connection accepted from 37.48.55.241:50783; transfer starting for /log/301-150818-180102-vysledky.log
+226 File received ok.
+132 bytes sent in 0.00 secs (307.7 kB/s)
+local: 301-150818-180202-vysledky.log remote: 301-150818-180202-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,211)
+150 Data connection accepted from 37.48.55.241:50866; transfer starting for /log/301-150818-180202-vysledky.log
+226 File received ok.
+748 bytes sent in 0.00 secs (1675.4 kB/s)
+local: 301-150818-180302-vysledky.log remote: 301-150818-180302-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,24)
+150 Data connection accepted from 37.48.55.241:50825; transfer starting for /log/301-150818-180302-vysledky.log
+226 File received ok.
+3476 bytes sent in 0.00 secs (1716.1 kB/s)
+local: 301-150818-180402-vysledky.log remote: 301-150818-180402-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,1)
+150 Data connection accepted from 37.48.55.241:50839; transfer starting for /log/301-150818-180402-vysledky.log
+226 File received ok.
+3476 bytes sent in 0.00 secs (1452.5 kB/s)
+local: 301-150818-180502-vysledky.log remote: 301-150818-180502-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,108)
+150 Data connection accepted from 37.48.55.241:50689; transfer starting for /log/301-150818-180502-vysledky.log
+226 File received ok.
+1584 bytes sent in 0.00 secs (1824.1 kB/s)
+local: 301-150818-181202-vysledky.log remote: 301-150818-181202-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,48)
+150 Data connection accepted from 37.48.55.241:50653; transfer starting for /log/301-150818-181202-vysledky.log
+226 File received ok.
+2200 bytes sent in 0.00 secs (1916.5 kB/s)
+local: 301-150819-091602-vysledky.log remote: 301-150819-091602-vysledky.log
+227 Entering Passive Mode (81,2,194,16,195,110)
+150 Data connection accepted from 37.48.55.241:50826; transfer starting for /log/301-150819-091602-vysledky.log
+226 File received ok.
+44 bytes sent in 0.00 secs (87.5 kB/s)
+local: 302-150813-182327-vysledky.log remote: 302-150813-182327-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,14)
+150 Data connection accepted from 37.48.55.241:50781; transfer starting for /log/302-150813-182327-vysledky.log
+226 File received ok.
+264 bytes sent in 0.00 secs (1156.1 kB/s)
+local: 302-150813-183623-vysledky.log remote: 302-150813-183623-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,39)
+150 Data connection accepted from 37.48.55.241:50873; transfer starting for /log/302-150813-183623-vysledky.log
+226 File received ok.
+352 bytes sent in 0.00 secs (1322.1 kB/s)
+local: 302-150813-184147-vysledky.log remote: 302-150813-184147-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,60)
+150 Data connection accepted from 37.48.55.241:50741; transfer starting for /log/302-150813-184147-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (472.2 kB/s)
+local: 302-150813-184702-vysledky.log remote: 302-150813-184702-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,34)
+150 Data connection accepted from 37.48.55.241:50784; transfer starting for /log/302-150813-184702-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (467.1 kB/s)
+local: 302-150813-184803-vysledky.log remote: 302-150813-184803-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,124)
+150 Data connection accepted from 37.48.55.241:50671; transfer starting for /log/302-150813-184803-vysledky.log
+226 File received ok.
+132 bytes sent in 0.00 secs (767.3 kB/s)
+local: 302-150813-185002-vysledky.log remote: 302-150813-185002-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,252)
+150 Data connection accepted from 37.48.55.241:50654; transfer starting for /log/302-150813-185002-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (572.9 kB/s)
+local: 302-150813-185246-vysledky.log remote: 302-150813-185246-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,155)
+150 Data connection accepted from 37.48.55.241:50867; transfer starting for /log/302-150813-185246-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (601.0 kB/s)
+local: 302-150813-185458-vysledky.log remote: 302-150813-185458-vysledky.log
+227 Entering Passive Mode (81,2,194,16,195,113)
+150 Data connection accepted from 37.48.55.241:50687; transfer starting for /log/302-150813-185458-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (592.7 kB/s)
+local: 302-150813-190402-vysledky.log remote: 302-150813-190402-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,252)
+150 Data connection accepted from 37.48.55.241:50907; transfer starting for /log/302-150813-190402-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (584.6 kB/s)
+local: 302-150813-190602-vysledky.log remote: 302-150813-190602-vysledky.log
+227 Entering Passive Mode (81,2,194,16,195,242)
+150 Data connection accepted from 37.48.55.241:50729; transfer starting for /log/302-150813-190602-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (454.7 kB/s)
+local: 302-150813-190702-vysledky.log remote: 302-150813-190702-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,205)
+150 Data connection accepted from 37.48.55.241:50917; transfer starting for /log/302-150813-190702-vysledky.log
+226 File received ok.
+440 bytes sent in 0.00 secs (1282.6 kB/s)
+local: 302-150813-190802-vysledky.log remote: 302-150813-190802-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,77)
+150 Data connection accepted from 37.48.55.241:50630; transfer starting for /log/302-150813-190802-vysledky.log
+226 File received ok.
+176 bytes sent in 0.00 secs (929.1 kB/s)
+local: 302-150813-191002-vysledky.log remote: 302-150813-191002-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,235)
+150 Data connection accepted from 37.48.55.241:50635; transfer starting for /log/302-150813-191002-vysledky.log
+226 File received ok.
+440 bytes sent in 0.00 secs (1427.5 kB/s)
+local: 302-150817-170006-vysledky.log remote: 302-150817-170006-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,205)
+150 Data connection accepted from 37.48.55.241:50875; transfer starting for /log/302-150817-170006-vysledky.log
+226 File received ok.
+440 bytes sent in 0.00 secs (1427.5 kB/s)
+local: 302-150817-170102-vysledky.log remote: 302-150817-170102-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,167)
+150 Data connection accepted from 37.48.55.241:50704; transfer starting for /log/302-150817-170102-vysledky.log
+226 File received ok.
+2244 bytes sent in 0.00 secs (1930.8 kB/s)
+local: 302-150817-170202-vysledky.log remote: 302-150817-170202-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,81)
+150 Data connection accepted from 37.48.55.241:50753; transfer starting for /log/302-150817-170202-vysledky.log
+226 File received ok.
+88 bytes sent in 0.00 secs (596.8 kB/s)
+local: 302-150817-170301-vysledky.log remote: 302-150817-170301-vysledky.log
+227 Entering Passive Mode (81,2,194,16,196,183)
+150 Data connection accepted from 37.48.55.241:50730; transfer starting for /log/302-150817-170301-vysledky.log
+226 File received ok.
+572 bytes sent in 0.00 secs (1564.7 kB/s)
+local: 302-150817-170401-vysledky.log remote: 302-150817-170401-vysledky.log
+227 Entering Passive Mode (81,2,194,16,198,203)
+150 Data connection accepted from 37.48.55.241:50699; transfer starting for /log/302-150817-170401-vysledky.log
+226 File received ok.
+308 bytes sent in 0.00 secs (1242.9 kB/s)
+local: 302-150817-170502-vysledky.log remote: 302-150817-170502-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,238)
+150 Data connection accepted from 37.48.55.241:50923; transfer starting for /log/302-150817-170502-vysledky.log
+226 File received ok.
+616 bytes sent in 0.00 secs (1591.4 kB/s)
+local: 302-150817-170602-vysledky.log remote: 302-150817-170602-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,88)
+150 Data connection accepted from 37.48.55.241:50930; transfer starting for /log/302-150817-170602-vysledky.log
+226 File received ok.
+176 bytes sent in 0.00 secs (954.9 kB/s)
+local: 302-150818-162002-vysledky.log remote: 302-150818-162002-vysledky.log
+227 Entering Passive Mode (81,2,194,16,197,65)
+150 Data connection accepted from 37.48.55.241:50742; transfer starting for /log/302-150818-162002-vysledky.log
+226 File received ok.
+10 bytes sent in 0.00 secs (87.2 kB/s)
 221 Goodbye.
