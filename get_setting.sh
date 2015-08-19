@@ -6,42 +6,54 @@
 #
 # This UNIX shell script  get data from setting ini file
 ###########################################################################################
+
 SETTING_PATH='/home/pi/b7/setting.ini'
 
 if [ "$#" -eq 1 ]; then
         case "$1" in
         "ftpserver")
-                /bin/sed -n 's/.*ftpserver *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*ftpserver *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "ftpuser")
-                /bin/sed -n 's/.*ftpuser *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*ftpuser *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "ftppassword")
-                /bin/sed -n 's/.*ftppassword *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*ftppassword *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
 		;;
         "file")
-                /bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "stanoviste")
-                /bin/sed -n 's/.*stanoviste *= *\([^ ]*.*\)/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*stanoviste *= *\([^ ]*.*\)/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dstdir")
-                /bin/sed -n 's/.*dstdir *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dstdir *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbserver")
-                /bin/sed -n 's/.*dbserver *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dbserver *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbport")
-                /bin/sed -n 's/.*dbport *= *\([^ ]*.*\)/\1/p' <  $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dbport *= *\([^ ]*.*\)/\1/p' <  $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbname")
-                /bin/sed -n 's/.*dbname *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dbname *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbuser")
-                /bin/sed -n 's/.*dbuser *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dbuser *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbpassword")
-                /bin/sed -n 's/.*dbpassword *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
+                OUT=$(/bin/sed -n 's/.*dbpassword *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH)
+		echo ${OUT:0:-1}
                 ;;
         "dbtablename")
                 /bin/sed -n 's/.*dbtablename *= "*\([^ ]*.*\)"/\1/p' < $SETTING_PATH
