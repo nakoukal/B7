@@ -18,35 +18,20 @@ BACKUPDIR="$SRCDIR/backup";
 
 
 #test if file log exist
-if (( $(find $SRCDIR -maxdepth 1 -name "*.log" | wc -l) == 0 )); then
-	echo "soubory s logy neexistuje!" >> "$SRCDIR/program_log/backup.log"
+if (( $(find . -maxdepth 1 -name "*.log" | wc -l) == 0 )); then
+	echo "soubory s logy neexistuje!" >> /home/pi/b7/program_log/backup.log
 	exit 0 
 fi
-
-
-# find all logs and cut text into one file into tosend folder
-# move all cuted logs into backup folded 
-# copy all cuted logs into flash dir
-find $SRCDIR -maxdepth 1 -name "*.log" | while read log
-do
-        if [ -f $log ]
-        then
-#               echo $log
-	        cat $log >> "$TOSENDDIR/$DATUM-vysledky.log"
-		mv $log $BACKUPDIR
-	`	cp $log $FLASHDIR
-        else
-
-#               echo "$log error"
-                echo "$DATUM backup $log FAILED" >> $LOGDIR/backup.log
-        fi
-
-done
-
 
 #echo $FILEFTP
 #echo ${#STNO}
 #echo $SERV
 #echo $LOGIN
 #echo $PASSW
+
+#presun a prejmenovani souboru do adresare pro odeslani a do backupu
+mv "${SRCDIR}"/*.log "${BACKUPDIR}/" #move to backup folder
+cp "${BACKUPDIR}"/*.log "${TOSENDDIR}/" #copu to ftpsend folder
+cp "${BACKUPDIR}"/*.log "${FLASHDIR}/" #copy to flashdisk folder
+
 exit 0
