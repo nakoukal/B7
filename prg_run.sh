@@ -10,9 +10,7 @@
 # script with parameters
 # 1 - script name
 ###########################################################################################
-
-FILE=$(/bin/sed -n 's/.*file *= "*\([^ ]*.*\)"/\1/p' < /home/pi/b7/setting.ini)
-SRCDIR=${FILE%/*} #cut path from pathwith filename
+SRCDIR=$(/home/pi/b7/get_setting.sh file)
 LOGDIR="$SRCDIR/program_log"
 
 if [ "$#" -ne 1 ]; then
